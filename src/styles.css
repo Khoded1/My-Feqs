@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+:root {
+	--primary-color: hsl(292, 42%, 14%);
+	--secondary-color: hsl(293, 97%, 63%);
+	--light-pink-color: hsl(275, 100%, 97%);
+}
+body {
+	background-color: hsl(275, 100%, 97%);
+	font-size: 16px;
+	font-family: 'Work Sans', serif;
+	background-image: url(../public/assets/images/background-pattern-desktop.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.headerContainer {
+	display: flex;
+	gap: 1.5rem;
+	align-items: center;
+	margin-bottom: 2rem;
+}
+.header {
+	font-size: 3.5rem;
+	color: var(--primary-color);
+	display: flex;
+	align-items: end;
+}
+.header span {
+	font-size: 2.2rem;
+}
+.accordion {
+	width: 600px;
+	margin: 100px auto;
+	display: flex;
+	flex-direction: column;
+	background-color: #fff;
+	padding: 1.5rem;
+	border-radius: 15px;
+}
+.item {
+	padding: 20px 24px;
+	padding-right: 48px;
+	cursor: pointer;
+	align-items: center;
+	scroll-behavior: smooth;
+}
+.title-con {
+	display: flex;
+	justify-content: space-between;
+}
+.title,
+.icon {
+	font-size: 18px;
+	font-weight: 900;
+	font-weight: 500;
+}
+.title:hover {
+	color: var(--secondary-color);
+}
+.content-box {
+	padding-top: 16px;
+	line-height: 1.6;
+}
+
+.content-box ul {
+	color: hsl(292, 42%, 14%);
+	/* color: red; */
+	margin-left: 16px;
+	margin-top: 16px;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+/* OPEN STATE */
+.open {
+	border-top: 4px solid var(--secondary-color);
+}

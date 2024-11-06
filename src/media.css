@@ -1,0 +1,14 @@
+@media (max-width: 480px) {
+	body {
+		background-image: url(../public/assets/images/background-pattern-mobile.svg);
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-color: hsl(275, 100%, 97%);
+	}
+	.header {
+		font-size: 2.7rem;
+	}
+	.accordion {
+		width: 400px;
+	}
+}
